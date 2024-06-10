@@ -1,18 +1,15 @@
-import React from 'react'
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-
+import React, { Fragment } from 'react'
+import { Header } from './Components/Header'
+import { Navbar } from './Components/Navbar'
 
 
 export const App = () => {
   return (
-    function App() {
-      return (
-        <BrowserRouter basename="/app">
-          <Routes>
-            <Route path="/" /> {/* 👈 Renders at /app/ */}
-          </Routes>
-        </BrowserRouter>
-      );
-    }
+    <Fragment>
+       <Header/>
+       <Navbar/>
+    </Fragment>
+  
   )
 }
+
